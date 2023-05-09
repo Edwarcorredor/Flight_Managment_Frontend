@@ -1,0 +1,102 @@
+{
+  "clientes": [
+    {
+      "id": "123456",
+      "nombres": "Julian",
+      "apellidos": "Reyes",
+      "telefono": "31432",
+      "fechaNacimiento": "2023-05-26",
+      "ciudad": "Rio de Janeiro",
+      "pais": "Brasil",
+      "correo": "bomba@gmail.com"
+    },
+    {
+      "id": "12345678",
+      "nombres": "Jaime",
+      "apellidos": "Antonio",
+      "telefono": "456977",
+      "fechaNacimiento": "2023-05-26",
+      "ciudad": "Medellin",
+      "pais": "Portugal",
+      "correo": "siu@hotmail.com"
+    },
+    {
+      "id": "1193156082",
+      "nombres": "Edwar Danilo",
+      "apellidos": "Corredor Amaya",
+      "telefono": "3222600908",
+      "fechaNacimiento": "2001-06-05",
+      "ciudad": "Bucaramanga",
+      "pais": "Colombia",
+      "correo": "eddacoam7.2@gmail.com"
+    },
+    {
+      "id": "1321",
+      "nombres": "ASDSAD",
+      "apellidos": "ASDAS",
+      "correo": "SADSAD@ASDSAD.COM"
+    }
+  ],
+  "rutas": [
+    {
+      "nombreRuta": "Ruta Medellin a Bucaramanga",
+      "ciudadOrigen": "Medellin",
+      "ciudadDestino": "Bucaramanga",
+      "millasRuta": "500",
+      "valorMilla": "10",
+      "id": 1
+    },
+    {
+      "nombreRuta": "Ruta Bucaramanga a Santa Marta",
+      "ciudadOrigen": "Bucaramanga",
+      "ciudadDestino": "Santa Marta",
+      "millasRuta": "2000",
+      "valorMilla": "10",
+      "id": 2
+    }
+  ],
+  "flotas": [
+    {
+      "id": "IRB99D",
+      "cantidadPasajeros": "85",
+      "fechaCompra": "2023-05-09",
+      "valorCompra": "500",
+      "numeroMatricula": "XMC419"
+    },
+    {
+      "id": "JJR541",
+      "cantidadPasajeros": "200",
+      "fechaCompra": "2023-05-17",
+      "valorCompra": "10000",
+      "numeroMatricula": "IRB95D"
+    }
+  ],
+  "embarque": [
+    {
+      "id": "123456",
+      "fecha": "2023-05-12",
+      "numeroVuelo": "50"
+    },
+    {
+      "id": "1193156082",
+      "fecha": "2023-05-10",
+      "numeroVuelo": "31256"
+    }
+  ],
+  "personal": [
+    {
+      "id": "1193156082",
+      "nombres": "Edwar",
+      "apellidos": "Corredor",
+      "correo": "edda@gmail.com",
+      "telefono": "32246",
+      "profesion": "Especialista en mecánica aérea"
+    }
+  ],
+  "puntos": [
+    {
+      "id": "1193156082",
+      "millas": 1000
+    }
+  ]
+}

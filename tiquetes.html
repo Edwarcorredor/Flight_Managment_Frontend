@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="/JS/tiquetes.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/CSS/tiquetes.css">
+    <title>Modulo de Tiquetes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <p class="navbar-brand">Campus Airlines</p>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/rutas.html">Rutas Aéreas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/flotas.html">Flota Aérea</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Compra Tiquetes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/embarque.html">Embarque </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="personal.html">Personal </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+      <div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Nombre Ruta</th>
+              <th scope="col">Ciudad Origen</th>
+              <th scope="col">Ciudad Destino</th>
+              <th scope="col">Millas Ruta</th>
+              <th scope="col">Valor Milla</th>
+            </tr>
+          </thead>
+          <tbody id="informacionRutas">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="container mt-3 ">
+        <div class="border mb-3 p-3">
+          <h2>Comprobar Usuario</h2>
+          <form id="formComprobar">
+            <label for="id" class="form-label ">Número de identificación:</label>
+            <input type="number" class="form-control mb-3" name="id">      
+            <input type="submit" value="Comprobar">       
+        </form>
+        <h3 id="comprobar"></h3>
+        </div>
+        <div class="border mb-3 p-3" id="usuarioSinRegistrar">
+          <h2>Informacion usuario no registrado</h2>
+          <form id="usuarioNoRegistrado">
+            <label for="id" class="form-label">Número de identificación:</label>
+            <input type="number" name="id" class="form-control" required> 
+            <label for="nombres" class="form-label">Nombres:</label>
+            <input type="text" name="nombres" class="form-control" required>
+            <label for="apellidos" class="form-label">Apellidos:</label>
+            <input type="text" name="apellidos" class="form-control" required> 
+            <label for="correo" class="form-label">Correo Electronico:</label>
+            <input type="email" name="correo" class="form-control mb-3" required> 
+            <input type="submit" value="Guardar">
+          </form>
+        </div>
+        <div id="viajes">
+          <form id="infoViaje">
+            <label for="ciudadOrigen" class="form-label">Ciudad de origen:</label>
+            <input type="text" name="ciudadOrigen" class="form-control"> 
+            <label for="ciudadDestino" class="form-label">Ciudad de destino:</label>
+            <input type="text" name="ciudadDestino" class="form-control mb-3"> 
+            <input type="submit" value="Comprar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          </form>
+        </div>   
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Resumen de la compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre del vuelo</th>
+                    <th scope="col">Tasa</th>
+                    <th scope="col">Impuesto</th>
+                    <th scope="col">Valor Total</th>
+                  </tr>
+                </thead>
+                <tbody id="resumen-compra">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+</body>
